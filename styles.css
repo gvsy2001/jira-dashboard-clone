@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f5f7;
+    padding: 20px;
+  }
+  
+  .dashboard {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    width: 22%;
+    padding: 10px;
+    background-color: #f1f2f6;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    min-height: 300px;
+  }
+  
+  .column h2 {
+    color: #333;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .counter {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #888;
+  }
+  
+  .card {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #2196f3;  /* Default color for To Do */
+    border: 2px solid #1976d2;
+    border-radius: 5px;
+    cursor: move;
+    transition: all 0.3s ease;
+  }
+  
+  .card h3 {
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  .card:active {
+    opacity: 0.7;
+  }
+  
+  .card.dragging {
+    background-color: #ffeb3b;
+  }
+  
+  .column .card:hover {
+    background-color: #cce7ff;
+  }
+  
+  .column.dragover {
+    background-color: #e1f7d5;
+  }
+  
+  .card.completed {
+    background-color: #8bc34a;/* Default color for Completed */
+    border-color: #388e3c;
+  }
+  
+  .card.in-progress {
+    background-color: #ff9800;/* Default color for Inprogress */
+    border-color: #fb8c00;
+  }
+  
+  .card.to-do {
+    background-color: #2196f3;/* Default color for To Do */
+    border-color: #1976d2;
+  }
+  
+  .card.failed {
+    background-color: #f44336;/* Default color for Failed */
+    border-color: #d32f2f;
+  }
+  
