@@ -94,4 +94,24 @@
     background-color: #f44336;/* Default color for Failed */
     border-color: #d32f2f;
   }
-  
+/* Priority flags */
+.priority {
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.priority.high {
+  background-color: #b71c1c;  /* High Priority: Dark Red */
+}
+
+.priority.mid {
+  background-color: #ab47bc;  /* Medium Priority: Golden Yellow */
+}
+
+.priority.low {
+  background-color: #388e3c;  /* Low Priority: Forest Green */
+}
+
+
